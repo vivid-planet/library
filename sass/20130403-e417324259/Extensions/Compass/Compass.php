@@ -149,7 +149,7 @@ class Compass implements ExtensionInterface
             return $file;
         }
         if (!$path = realpath($file)) {
-            $path = \SassScriptFunction::$context->node->token->filename;
+            $path = SassScriptFunction::$context->node->token->filename;
             $path = substr($path, 0, strrpos($path, '/')) . '/';
             $path = $path . $file;
             $last = '';
@@ -290,7 +290,7 @@ class Compass implements ExtensionInterface
         }
 
         if (isset($list[$place])) {
-            return current(\SassScriptLexer::$instance->lex($list[$place], new SassContext()));
+            return current(SassScriptLexer::$instance->lex($list[$place], new SassContext()));
         }
         return new SassBoolean(false);
     }
@@ -486,7 +486,7 @@ class Compass implements ExtensionInterface
     public static function compassUrl($path, $only_path = false, $web_path = true)
     {
         $opath = $path;
-        if (!$path = \SassFile::get_file($path, \SassParser::$instance, false)) {
+        if (!$path = SassFile::get_file($path, SassParser::$instance, false)) {
             throw new Exception('File not found: ' . $opath);
         }
 
@@ -502,4 +502,20 @@ class Compass implements ExtensionInterface
         return new SassString("url('$path')");
     }
 
+    public static function compassOppositePosition($from)
+    {
+        $ret = '';
+        if ($from == 'top') {
+            $ret = 'bottom';
+        } else if ($from == 'bottom') {
+            $ret = 'top';
+        } else if ($from == 'left') {
+            $ret = 'right';
+        } else if ($from == 'right') {
+            $ret = 'left';
+        } else if ($from == 'center') {
+            $ret = 'center';
+        }
+        return $ret;
+    }
 }

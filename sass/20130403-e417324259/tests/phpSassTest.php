@@ -301,6 +301,10 @@ class PHPSass_TestCase extends PHPUnit_Framework_TestCase {
     $this->runSassTest('units.sass');
   }
 
+  public function testListVariable() {
+    $this->runSassTest('list_variable.scss');
+  }
+
   public function testWarnImported() {
     $this->markTestIncomplete('This test has not been implemented yet.');
     //$this->runSassTest('warn_imported.sass');
