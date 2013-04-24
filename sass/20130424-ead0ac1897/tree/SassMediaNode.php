@@ -61,12 +61,23 @@ class SassMediaNode extends SassNode {
    * @return array An empty array
    */
   public function parse($context) {
-    $this->token->source = SassDirectiveNode::interpolate_nonstrict($this->token->source, $context);
+    // If we are in a loop, function or mixin then the parent isn't what should
+    // go inside the media node.  Walk up the parent tree to find the rule node
+    // to put inside the media node or the root node if the media node should be
+    // at the root.
+    $parent = $this->parent;
+    while (!($parent instanceOf SassRuleNode) && !($parent instanceOf SassRootNode)) {
+        $parent = $parent->parent;
+    }
 
-    $node = new SassRuleNode($this->token, $context);
-    $node->root = $this->parent->root;
+    // Make a copy of the token before parsing in case we are in a loop and it contains variables
+    $token = clone $this->token;
+    $token->source = SassDirectiveNode::interpolate_nonstrict($token->source, $context);
 
-    $rule = clone $this->parent;
+    $node = new SassRuleNode($token, $context);
+    $node->root = $parent->root;
+
+    $rule = clone $parent;
     $rule->root = $node->root;
     $rule->children = $this->children;
 

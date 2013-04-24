@@ -346,4 +346,14 @@ class SassNode {
   public static function isa($token) {
     throw new SassNodeException('Child classes must override this method');
   }
+
+  public function printDebugTree($i = 0)
+  {
+    echo str_repeat(' ', $i*2).get_class($this)." ".$this->getSource()."\n";
+    $p = $this->getParent();
+    if ($p) echo str_repeat(' ', $i*2)." parent: ".get_class($p)."\n";
+    foreach ($this->getChildren() as $c) {
+        $c->printDebugTree($i+1);
+    }
+  }
 }

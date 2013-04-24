@@ -92,6 +92,10 @@ class SassScriptLexer {
           $tokens[] = $stringed;
         }
       }
+      elseif ($string == '()') {
+        $match = $string;
+        $tokens[] = new SassList($match);
+      }
       elseif (($match = SassScriptOperation::isa($string)) !== false) {
         $tokens[] = new SassScriptOperation($match);
       }

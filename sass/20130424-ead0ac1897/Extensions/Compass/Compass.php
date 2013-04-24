@@ -11,7 +11,6 @@ class Compass implements ExtensionInterface
      * @var array
      */
     public static $functions = array(
-        'if',
         'resolve-path',
         'adjust-lightness',
         'scale-lightness',
@@ -129,15 +128,6 @@ class Compass implements ExtensionInterface
         if (isset(self::$filePaths[$alias])) {
             return self::$filePaths[$alias];
         }
-    }
-
-
-    /**
-     * Defines the "if" public static function, used like: if(condition, if_true, if_false)
-     */
-    public static function compassIf($condition, $if_true, $if_false)
-    {
-        return ($condition ? $if_true : $if_false);
     }
 
     /**

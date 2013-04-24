@@ -52,7 +52,7 @@ class SassScriptOperation {
    * @var array operators with meaning in uquoted strings;
    * selectors, property names and values
    */
-  public static $inStrOperators = array(',', '#{');
+  public static $inStrOperators = array(',', '#{', ')', '(');
 
   /**
    * @var array default operator token.

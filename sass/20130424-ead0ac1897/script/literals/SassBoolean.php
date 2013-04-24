@@ -55,6 +55,17 @@ class SassBoolean extends SassLiteral {
     return $this->getValue() ? 'true' : 'false';
   }
 
+  public function length() {
+      return 1;
+  }
+
+  public function nth($i) {
+    if ($i == 1 && isset($this->value)) {
+        return new SassBoolean($this->value);
+    }
+    return new SassBoolean(false);
+  }
+
   /**
    * Returns a value indicating if a token of this type can be matched at
    * the start of the subject string.

@@ -1,0 +1,16 @@
+/*
+@import "susy";
+@import "compass/utilities/general/clearfix";
+*/
+
+$grid-padding: 10px;
+
+div {
+        /*@include set-container-width2();*/
+        /*@include if-rem(padding-left, $grid-padding);*/
+        
+        $value: 10px;
+        $has-rem: false;
+        $has-rem: if(unit($value) == 'rem', true, false);
+        @if $has-rem { @include rem($value); }
+}
