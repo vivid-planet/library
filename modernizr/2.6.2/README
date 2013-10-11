@@ -1,0 +1,5 @@
+builds.json:
+
+this file is updated manually
+to create a new set of modernizr features generate a new production build of modernizr on http://modernizr.com/download/
+and add it to this list

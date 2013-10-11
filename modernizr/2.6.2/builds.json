@@ -1,0 +1,15 @@
+[
+{
+    "file": "build-cssanimations-csstransforms-mq-cssclasses-teststyles-testprop-testallprops-domprefixes-css_mediaqueries.js",
+    "features": [
+        "CssAnimations",
+        "CssTransforms",
+        "CssMediaQueries"
+    ]
+},{
+    "file": "build-cssanimations-cssclasses-teststyles-testprop-testallprops-domprefixes.js",
+    "features": [
+        "CssAnimations"
+    ]
+}
+]
