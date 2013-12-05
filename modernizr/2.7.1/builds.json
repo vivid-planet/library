@@ -1,0 +1,23 @@
+[
+{
+    "file": "build-cssanimations-csstransforms-mq-cssclasses-teststyles-testprop-testallprops-prefixes-domprefixes-css_mediaqueries.js",
+    "features": [
+        "CssAnimations",
+        "CssTransforms",
+        "CssMediaQueries"
+    ]
+},{
+    "file": "build-cssanimations-cssclasses-testprop-testallprops-domprefixes.js",
+    "features": [
+        "CssAnimations"
+    ]
+},{
+    "file": "build-cssanimations-csstransforms-touch-mq-cssclasses-teststyles-testprop-testallprops-prefixes-domprefixes-css_mediaqueries.js",
+    "features": [
+        "CssAnimations",
+        "CssTransforms",
+        "CssMediaQueries",
+        "TouchEvents"
+    ]
+}
+]
