@@ -13,6 +13,7 @@
 
  #DEFAULT db connection settings
  # --- WARNING! --- if you set defaults - it's recommended to set $ACCESS_PWD to protect your db!
+ /*
  $DBDEF=array(
  'user'=>"vivid",#required
  'pwd'=>"vivid", #required
@@ -21,6 +22,7 @@
  'port'=>"",#optional
  'chset'=>"utf8",#optional, default charset
  );
+ */
  date_default_timezone_set('UTC');#required by PHP 5.1+
 
 //constants
