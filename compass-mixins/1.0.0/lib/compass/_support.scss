@@ -38,3 +38,27 @@ $experimental-support-for-khtml        : false !default;
 $experimental-support-for-svg          : false !default;
 // Support for CSS PIE in experimental css3 properties (-pie).
 $experimental-support-for-pie          : false !default;
+
+
+
+
+@function -compass-list-size($list) {
+    $compassListSize: 0;
+    @each $i in $list {
+        $compassListSize: $compassListSize + 1;
+    }
+    @return $compassListSize;
+}
+@function opposite-position($from) {
+    @if ($from == top) {
+        @return bottom;
+    } @else if ($from == bottom) {
+        @return top;
+    } @else if ($from == left) {
+        @return right;
+    } @else if ($from == right) {
+        @return left;
+    } @else if ($from == center) {
+        @return center;
+    }
+}
