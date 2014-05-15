@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../ExtensionInterface.php';
+require_once dirname(__FILE__) . '/../ExtensionInterface.php';
 class Compass implements ExtensionInterface
 {
 
