@@ -1,0 +1,81 @@
+[
+{
+    "file": "build-cssanimations-csstransforms-mq-cssclasses-teststyles-testprop-testallprops-prefixes-domprefixes-css_mediaqueries.js",
+    "features": [
+        "CssAnimations",
+        "CssTransforms",
+        "CssMediaQueries"
+    ]
+},{
+    "file": "build-cssanimations-cssclasses-testprop-testallprops-domprefixes.js",
+    "features": [
+        "CssAnimations"
+    ]
+},{
+    "file": "build-cssanimations-csstransforms-touch-mq-cssclasses-teststyles-testprop-testallprops-prefixes-domprefixes-css_mediaqueries.js",
+    "features": [
+        "CssAnimations",
+        "CssTransforms",
+        "CssMediaQueries",
+        "TouchEvents"
+    ]
+},{
+    "file": "build-cssanimations-csstransforms-video-touch-mq-cssclasses-teststyles-testprop-testallprops-prefixes-domprefixes-css_mediaqueries.js",
+    "features": [
+        "CssAnimations",
+        "CssTransforms",
+        "CssMediaQueries",
+        "Html5Video",
+        "TouchEvents"
+    ]
+},{
+    "file": "build-mq-cssclasses-teststyles-css_mediaqueries.js",
+    "features": [
+        "CssMediaQueries"
+    ]
+},{
+    "file": "build-video-cssclasses.js",
+    "features": [
+        "Html5Video"
+    ]
+},{
+    "file": "build-touch-cssclasses-teststyles-prefixes.js",
+    "features": [
+        "TouchEvents"
+    ]
+},{
+    "file": "csstransforms-csstransitions-cssclasses-testprop-testallprops-domprefixes.js",
+    "features": [
+        "CssTransforms",
+        "CssTransitions"
+    ]
+},{
+    "file": "build-csstransforms-csstransforms3d-csstransitions-cssclasses-teststyles-testprop-testallprops-prefixes-domprefixes.js",
+    "features": [
+        "CssTransforms",
+        "CssTransforms3D",
+        "CssTransitions"
+    ]
+},{
+    "file": "cssanimations-csstransforms-csstransitions-touch-mq-cssclasses-teststyles-testprop-testallprops-prefixes-domprefixes-css_mediaqueries.js",
+    "features": [
+        "CssAnimations",
+        "CssTransforms",
+        "CssTransitions",
+        "TouchEvents",
+        "CssMediaQueries"
+    ]
+},{
+    "file": "build-cssanimations-mq-cssclasses-teststyles-testprop-testallprops-domprefixes-css_mediaqueries.js",
+    "features": [
+        "CssAnimations",
+        "CssMediaQueries"
+    ]
+},{
+    "file": "build-cssanimations-csstransforms3d-cssclasses-teststyles-testprop-testallprops-prefixes-domprefixes.js",
+    "features": [
+        "CssAnimations",
+        "CssTransforms3D"
+    ]
+}
+]

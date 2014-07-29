@@ -1,0 +1,8 @@
+{
+    "name": "koala-framework/library-modernizr",
+    "description": "Modernizr JavaScript Library",
+    "homepage": "http://modernizr.com/",
+    "license": "MIT",
+    "support": {
+    }
+}
